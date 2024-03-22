@@ -1,0 +1,21 @@
+{
+    "name": "Upcoming Toronto Concerts",
+    "version": "1.0.2",
+    "description": "This is an extension to look up concerts coming to Toronto",
+    "manifest_version": 3,
+    "author": "Tiffany J",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": ["storage", "tabs", "activeTab"]
+  }
+  
