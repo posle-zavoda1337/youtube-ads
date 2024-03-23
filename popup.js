@@ -1,9 +1,9 @@
 let defaultSettins = {
     isWorkApp: true,
+    playbackRateDefault: 1.0,
     isAutoClickSkipAdv: true,
     isAdvBanner: true,
     playbackRateAds: 10.0,
-    playbackRateDefault: 1.0,
     timerSeconds: 1000,
 }
 
@@ -23,9 +23,10 @@ switchButton.addEventListener("click", () => {
 });
 
 btns.forEach((item) => {
+ 
     item.addEventListener("click", (e) => {
         currentOnSpeed.innerHTML = item.innerHTML;
-        defaultSettins.playbackRateDefault = parseFloat(item.innerHTML);
+        defaultSettins.playbackRateDefault = parseFloat(item.innerHTML); 
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
             chrome.tabs.sendMessage(tabs[0].id, {isWorkApp: defaultSettins});
         });

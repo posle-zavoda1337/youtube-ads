@@ -1,11 +1,12 @@
 let defaultSettins = {
     isWorkApp: true,
+    playbackRateDefault: 1.0,
     isAutoClickSkipAdv: true,
     isAdvBanner: true,
     playbackRateAds: 10.0,
-    playbackRateDefault: 1.0,
     timerSeconds: 1000,
 }
+
 
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     defaultSettins = message.isWorkApp;
@@ -18,17 +19,17 @@ const interval = setInterval(() => {
         try {
             const a = document.getElementsByClassName("video-stream html5-main-video");
             if (a.length){
-                console.log("ad_showing is found")
+                // ad_showing is found
                 a[0].playbackRate = defaultSettins.playbackRateAds;
 
                 const skipBtnCollection = document.getElementsByClassName("ytp-skip-ad-button");
                 if (skipBtnCollection.length && defaultSettins.isAutoClickSkipAdv){
                     skipBtnCollection[0].click()
-                    console.log('CLICK SKIP ADV HAPPEND')
+                    //CLICK SKIP ADV HAPPEND
                     const advBanner = document.getElementById("related")
                     if (advBanner && defaultSettins.isAdvBanner){
+                        //REMOVED ADS BANNER
                         advBanner.parentNode.removeChild(advBanner)
-                        console.log("REMOVED ADS BANNER")
                     }
                 } 
 
@@ -41,6 +42,6 @@ const interval = setInterval(() => {
             if (b.length){
                 b[0].playbackRate = defaultSettins.playbackRateDefault;
             }
-        console.log("CURRENT CLASSNAME(ad-showing) NOT NOFUND")
+        // CURRENT CLASSNAME(ad-showing) NOT NOFUND
     }
 }, defaultSettins.timerSeconds);
