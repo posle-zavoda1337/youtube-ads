@@ -20,17 +20,19 @@
     text-transform: uppercase;
 }
 
-.btns {
+.settings {
     display: flex;
     align-items: center;
-    justify-content: left;
-    margin-bottom: 15px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.switch {}
+
+.current {
 }
 
-.btn {
-    margin-right: 5px;
-}
-
-#current {
-
-}
+.btn {}
+.btn1{}
+.btn2{}
+.btn3{}
+.btn4{}
