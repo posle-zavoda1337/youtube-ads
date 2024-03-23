@@ -1,0 +1,36 @@
+.wrapper {
+    width: 300px;
+    padding: 0px 15px 0px 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header_image {
+    width: 30px;
+    height: 30px;
+}
+
+.header_name {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-right: 5px;
+}
+
+#current {
+
+}

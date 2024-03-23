@@ -1,5 +1,4 @@
-2. Design popup
-3. Donate
+3. Donate links
 4. addition func 
     1. turn on/off
     2. choose speed limit
