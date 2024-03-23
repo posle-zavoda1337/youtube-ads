@@ -1,7 +1,9 @@
-1. auto button skip
 2. Design popup
 3. Donate
 4. addition func 
     1. turn on/off
     2. choose speed limit
-    
+
+
+final task: 
+    get a good info of app
