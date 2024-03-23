@@ -1,8 +1,1 @@
-3. Donate links
-4. addition func 
-    1. turn on/off
-    2. choose speed limit
-
-
-final task: 
-    get a good info of app
+Donate links

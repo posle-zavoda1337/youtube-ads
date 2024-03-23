@@ -39,7 +39,6 @@ const interval = setInterval(() => {
     } else {
         const b = document.getElementsByClassName("video-stream html5-main-video")
             if (b.length){
-                console.log("ad_showing isnt found")
                 b[0].playbackRate = defaultSettins.playbackRateDefault;
             }
         console.log("CURRENT CLASSNAME(ad-showing) NOT NOFUND")

@@ -11,12 +11,12 @@ const switchButton = document.querySelector(".switch");
 const btns = document.querySelectorAll(".btn");
 const currentOn = document.querySelector(".current_on");
 const currentOnSpeed = document.querySelector(".current_speed");
-
-//if (!switchButton || !currentOn || !btns) return;
+const question = document.querySelector(".question");
+const aboutApp = document.querySelector(".aboutApp")
 
 switchButton.addEventListener("click", () => {
     defaultSettins.isWorkApp = !defaultSettins.isWorkApp;
-    currentOn.innerHTML = defaultSettins.isWorkApp ? "ON" : "OFF";
+    currentOn.innerHTML = defaultSettins.isWorkApp ? "enabled" : "disabled";
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {isWorkApp: defaultSettins});
     });
@@ -30,4 +30,12 @@ btns.forEach((item) => {
             chrome.tabs.sendMessage(tabs[0].id, {isWorkApp: defaultSettins});
         });
     });
+})
+
+question.addEventListener("click", (e) => {
+    if (aboutApp.classList.contains("hide")){
+        aboutApp.classList.remove("hide")
+    } else {
+        aboutApp.classList.add("hide")
+    }
 })

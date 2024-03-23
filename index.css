@@ -26,13 +26,40 @@
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.switch {}
 
+.settings__addition {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
 .current {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.advbanner {
+    margin-bottom: 5px;
 }
 
-.btn {}
-.btn1{}
-.btn2{}
-.btn3{}
-.btn4{}
+.autoclick {
+    margin-bottom: 5px;
+}
+
+.question {
+    margin-left: 152px; 
+}
+
+.aboutApp {
+    display: block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.aboutApp.hide {
+    display: none;
+}
+
+.aboutApp__title {
+    font-weight: 700;
+}
