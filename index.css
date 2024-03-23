@@ -1,0 +1,38 @@
+.wrapper {
+    width: 300px;
+    padding: 0px 15px 0px 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header_image {
+    width: 30px;
+    height: 30px;
+}
+
+.header_name {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.switch {}
+
+.current {
+}
+
+.btn {}
+.btn1{}
+.btn2{}
+.btn3{}
+.btn4{}

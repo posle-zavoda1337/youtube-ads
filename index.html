@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AdFreeTube</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div>
-        HELO
-        <button id="button">Нажми меня!</button>
+    <div class="wrapper">
+        <div class="header">
+            <img src="./icons/icon32.png" alt="icon_header" class="header_image">
+            <h1 class="header_name">AdFreeTube</h1>
+        </div>
+
+        <div class="settings">
+            <button class="switch">SWITCH ON/OFF</button>
+            <div>
+                <button class="btn btn1">1.0</button>
+                <button class="btn btn2">1.5</button>
+                <button class="btn btn3">2.0</button>
+                <button class="btn btn4">2.5</button>
+            </div>
+        </div>
+
+        <div class="current">
+            <div>
+                <span>current: </span>
+                <span class="current_on">ON</span>
+                <span class="current_speed">1.0</span>
+            </div>
+        </p>
     </div>
+
 </body>
-<script src="./content.js"></script>
+<script src="./popup.js"></script>
+<!-- <script src="./content.js">
+</script> -->
 </html>
