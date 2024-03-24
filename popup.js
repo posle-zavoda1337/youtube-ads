@@ -23,7 +23,6 @@ switchButton.addEventListener("click", () => {
 });
 
 btns.forEach((item) => {
- 
     item.addEventListener("click", (e) => {
         currentOnSpeed.innerHTML = item.innerHTML;
         defaultSettins.playbackRateDefault = parseFloat(item.innerHTML); 
