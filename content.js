@@ -33,12 +33,7 @@ const interval = setInterval(() => {
                     skipBtnCollection1[0].click()
                     console.log("//CLICK SKIP ADV1 HAPPEND")
                     //CLICK SKIP ADV HAPPEND
-                    const advBanner = document.getElementById("related")
-                    if (advBanner && defaultSettins.isAdvBanner){
-                        //REMOVED ADS BANNER
-                        console.log("REMOVED ADS BANNER")
-                        advBanner.parentNode.removeChild(advBanner)
-                    }
+                    
                 }
 
                 if (skipBtnCollection.length && defaultSettins.isAutoClickSkipAdv){
